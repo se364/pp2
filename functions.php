@@ -42,10 +42,13 @@ function removeDups($arr){
 function distribution($sortArr){
 
 
-    $countArray = array_count_values($sortArr);
-    //$a = asort($countArray);
+    $array = array_count_values($sortArr);
 
-    print_r ($countArray);
+    foreach($array as $keys => $count) {
+        echo  "$keys"." -> ". "$count";
+
+    }
+
 
 
 

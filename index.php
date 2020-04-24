@@ -30,3 +30,7 @@
     echo "<br>";
     echo "<br>Large number from the array is:\n\n\n";
     largest($numbers);
+
+    echo"<br>Removing the duplicate and print array<br>";
+    removeDups($numbers);
+    //var_dump($numbers);

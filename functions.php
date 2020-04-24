@@ -12,3 +12,7 @@ function largest($myArr){
     echo max($myArr);
 }
 
+function removeDups($arr){
+    $result = array_unique($arr);
+    print_r($result);
+}

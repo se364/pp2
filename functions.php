@@ -8,3 +8,7 @@ function printArr($array){
     }
 }
 
+function largest($myArr){
+    echo max($myArr);
+}
+

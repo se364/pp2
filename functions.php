@@ -1,5 +1,6 @@
 <?php
 
+// Prints the array
 function printArr($array){
 
     $length = count($array);
@@ -8,10 +9,12 @@ function printArr($array){
     }
 }
 
+// Finds the largest value and prints
 function largest($myArr){
     echo max($myArr);
 }
 
+// Removes the duplicate array
 function removeDups($arr){
     $temp_array = array();
 
@@ -29,6 +32,23 @@ function removeDups($arr){
             echo $val2 . ', ';
         }
     }
+
+
+}
+
+
+// Returns number of each element in the array
+// as an associative array
+function distribution($sortArr){
+
+
+    $countArray = array_count_values($sortArr);
+    //$a = asort($countArray);
+
+    print_r ($countArray);
+
+
+
 
 
 }

@@ -30,6 +30,12 @@
     echo "<br>";
     echo "<br>Large number from the array is:\n\n\n";
     largest($numbers);
+
     echo "<br>";
     echo"<br>Removing the duplicate and print array<br>";
     removeDups($numbers);
+
+    echo "<br>";
+    echo"<br>Counting the number of elements in the array<br>";
+    sort($numbers);
+    distribution($numbers);

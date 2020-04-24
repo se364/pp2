@@ -13,6 +13,23 @@ function largest($myArr){
 }
 
 function removeDups($arr){
-    $result = array_unique($arr);
-    print_r($result);
+    $temp_array = array();
+
+    foreach($arr as $val)
+    {
+        if(!isset($temp_array[$val])) {
+            $temp_array[$val] = $val;
+        }
+    }
+
+    foreach($temp_array as $val2)
+    {
+        if($val2 > 0)
+        {
+            echo $val2 . ', ';
+        }
+    }
+
+
 }
+
